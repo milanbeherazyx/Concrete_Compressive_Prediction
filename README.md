@@ -10,9 +10,37 @@ The Concrete Compressive Strength Prediction project utilizes machine learning t
 
 The project includes a Flask web application that allows users to input concrete properties and obtain the predicted compressive strength. It also provides functionality to train and evaluate different regression models.
 
+## Objective:
+
+The objective of this project is to build a robust machine learning model that can accurately predict the compressive strength of concrete based on its various properties and compositions. The model will be trained on the provided dataset and will be capable of making predictions on unseen concrete samples.
+
 ## Dataset
 
 The dataset used for this project is located in the `data` directory. The file `concrete_data.csv` contains the concrete compressive strength data along with the corresponding input features. The dataset is used for training the regression models.
+
+
+
+## Deliverables:
+1. **Dataset:** The project utilizes the dataset provided in the GitHub repository [Concrete_Compressive_Prediction](https://github.com/milanbeherazyx/Concrete_Compressive_Prediction.git). Ensure the dataset is correctly imported and preprocessed for model training.
+2. **Exploratory Data Analysis (EDA):** Perform an initial exploration of the dataset to gain insights into the features, their distributions, and any potential correlations. Visualize the data to identify patterns or anomalies that may influence the predictive model.
+3. **Data Preprocessing:** Prepare the dataset for model training by performing necessary preprocessing steps such as handling missing values, handling categorical variables (if any), feature scaling, and splitting the data into training and testing sets.
+4. **Model Selection:** Evaluate different regression models suitable for the concrete compressive strength prediction task. Consider models such as Linear Regression, Decision Trees, Random Forests, Support Vector Regression, or others. Select the most appropriate model based on performance metrics and the project requirements.
+5. **Model Training:** Implement and train the selected machine learning model using the preprocessed dataset. Optimize the model's hyperparameters to improve its performance.
+6. **Model Evaluation:** Evaluate the trained model using appropriate evaluation metrics such as Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R-squared (R2) score. Assess the model's performance and analyze any potential areas of improvement.
+7. **Prediction Interface:** Develop a user-friendly interface that allows users to input the properties and compositions of concrete and obtain a predicted compressive strength value based on the trained model.
+8. **Documentation:** Provide detailed documentation covering the project's overview, dataset description, data preprocessing steps, model selection process, model training approach, evaluation metrics, and instructions for running the prediction interface.
+9. **Code Repository:** Maintain a well-structured code repository that includes all the necessary code files, notebooks, and scripts required to reproduce the project.
+
+**Timeline:**
+1. Data Import and Exploration: 2 days
+2. Data Preprocessing: 2 days
+3. Model Selection: 2 days
+4. Model Training and Hyperparameter Optimization: 3 days
+5. Model Evaluation and Analysis: 1 day
+6. Prediction Interface Development: 3 days
+7. Documentation: 2 days
+
+Note: The timeline provided above is a rough estimate and can be adjusted based on the complexity of the project and your availability.
 
 ## Installation
 
