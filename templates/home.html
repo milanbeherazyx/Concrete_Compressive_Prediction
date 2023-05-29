@@ -1,0 +1,117 @@
+<!-- index.html -->
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center;
+            background-color: #F7F7F7;
+            background-image: url('landscape.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 10px;
+        }
+        
+        h1 {
+            font-size: 48px;
+            color: #000;
+            margin-bottom: 40px;
+        }
+        
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        label {
+            display: block;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 20px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        p {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        
+        .project-info {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #555;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: #000;">Concrete Compressive Strength Prediction</h1>
+        <form action="/predictdata" method="post">
+            <label for="Cement">Cement:</label>
+            <input type="number" name="Cement" id="Cement" step="0.01" required>
+
+            <label for="Blast_Furnace_Slag">Blast Furnace Slag:</label>
+            <input type="number" name="Blast_Furnace_Slag" id="Blast_Furnace_Slag" step="0.01" required>
+
+            <label for="Fly_Ash">Fly Ash:</label>
+            <input type="number" name="Fly_Ash" id="Fly_Ash" step="0.01" required>
+
+            <label for="Water">Water:</label>
+            <input type="number" name="Water" id="Water" step="0.01" required>
+
+            <label for="Superplasticizer">Superplasticizer:</label>
+            <input type="number" name="Superplasticizer" id="Superplasticizer" step="0.01" required>
+
+            <label for="Coarse_Aggregate">Coarse Aggregate:</label>
+            <input type="number" name="Coarse_Aggregate" id="Coarse_Aggregate" step="0.01" required>
+
+            <label for="Fine_Aggregate">Fine Aggregate:</label>
+            <input type="number" name="Fine_Aggregate" id="Fine_Aggregate" step="0.01" required>
+
+            <label for="Age">Age:</label>
+            <input type="number" name="Age" id="Age" required>
+
+            <input type="submit" value="Predict">
+        </form>
+        <p>The predicted compressive strength is {{results}}</p>
+        <div class="project-info">
+            <p>Project by Milan Kumar Behera</p>
+            <p>Email: milanbeherazyx@gmail.com</p>
+            <p>Linkedin: milanbeherazyx</p>
+        </div>
+    </div>
+</body>
+</html>
