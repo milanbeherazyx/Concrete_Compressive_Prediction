@@ -16,7 +16,7 @@ def get_requirements(file_path:str)->List[str]:
 
 
 setup(
-    name='Concrete_Compressive_Prediction',
+    name='Concrete_Compressive_Strength_Prediction',
     version='0.0.1',
     author='Milan',
     author_email='milanbeherazyx@gmail.com',
