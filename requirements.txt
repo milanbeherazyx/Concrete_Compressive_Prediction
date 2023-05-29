@@ -15,7 +15,7 @@ charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654
 click @ file:///D:/bld/click_1666798499870/work
 colorama @ file:///C:/b/abs_a9ozq0l032/croot/colorama_1672387194846/work
 comm @ file:///C:/b/abs_1419earm7u/croot/comm_1671231131638/work
--e git+https://github.com/milanbeherazyx/Concrete_Compressive_Prediction.git@916c9d5934b30bd1b11df9ab5d2b1b5b633ebe21#egg=Concrete_Compressive_Prediction
+-e git+https://github.com/milanbeherazyx/Concrete_Compressive_Prediction.git@3f497c849004039a0d9b1e4355c846b23b81b068#egg=Concrete_Compressive_Strength_Prediction
 contourpy==1.0.7
 cryptography @ file:///D:/bld/cryptography_1637687418742/work
 cycler==0.11.0
