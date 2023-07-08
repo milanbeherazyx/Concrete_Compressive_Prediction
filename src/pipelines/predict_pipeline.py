@@ -18,11 +18,9 @@ class PredictPipeline:
             preprocessor=load_object(file_path=preprocessor_path)
             print("After Loading")
             data_scaled=preprocessor.transform(features)
-            preds=model.predict(data_scaled)
-            return preds
-        
+            return model.predict(data_scaled)
         except Exception as e:
-            raise CustomException(e,sys)
+            raise CustomException(e,sys) from e
         
         
         
@@ -69,5 +67,5 @@ class CustomData:
             return pd.DataFrame(custom_data_input_dict)
 
         except Exception as e:
-            raise CustomException(e, sys)
+            raise CustomException(e, sys) from e
 

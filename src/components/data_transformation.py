@@ -24,13 +24,13 @@ class DataTransformation:
 
     def get_data_transformation_object(self):
          
-         try:
+        try:
             logging.info('Data Transformation initiated')
-            
+
             numerical_cols = ['Cement', 'Blast_Furnace_Slag', 'Fly_Ash', 'Water', 'Superplasticizer',
                               'Coarse_Aggregate', 'Fine_Aggregate', 'Age']
-            
-            
+
+
             logging.info('Pipeline Initiated')
 
             ## Numerical Pipeline
@@ -43,18 +43,15 @@ class DataTransformation:
 
             )
 
-            preprocessor=ColumnTransformer([
-            ('num_pipeline',num_pipeline,numerical_cols),
-            ])
-            
-            return preprocessor
+            return ColumnTransformer(
+                [
+                    ('num_pipeline', num_pipeline, numerical_cols),
+                ]
+            )
+        except Exception as e:
 
-            logging.info('Pipeline Completed')
-
-         except Exception as e:
-            
             logging.info("Error in Data Trnasformation")
-            raise CustomException(e,sys)
+            raise CustomException(e,sys) from e
         
     def initiate_data_transformation(self,train_path,test_path):
         try:
@@ -105,8 +102,8 @@ class DataTransformation:
                 test_arr,
                 self.data_transformation_config.preprocessor_obj_file_path
             )
-        
+
         except Exception as e:
             logging.info("Exception occured in the initiate_datatransformation")
 
-            raise CustomException(e,sys)
+            raise CustomException(e,sys) from e
