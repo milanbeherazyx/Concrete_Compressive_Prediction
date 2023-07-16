@@ -26,7 +26,6 @@ pyasn1-modules
 pymongo
 pyparsing
 pytz
-pywin32
 scikit-learn
 scipy
 seaborn
